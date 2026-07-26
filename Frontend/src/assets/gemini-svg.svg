@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Subtle Orange Gradient -->
+    <linearGradient id="foodieOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1e293b" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- 1. APP ICON BASE (Rounded Square Canvas) -->
+  <rect x="64" y="64" width="896" height="896" rx="224" fill="url(#foodieOrange)" />
+
+  <!-- 2. MAIN LOGO SYMBOL (Location Pin + Takeaway Box Hybrid) -->
+  <g filter="url(#softShadow)">
+    
+    <!-- Outer White Location Pin -->
+    <path 
+      d="M512 208 C379.45 208 272 315.45 272 448 C272 612 472 788 500.8 812.8 C507.2 818.4 516.8 818.4 523.2 812.8 C552 788 752 612 752 448 C752 315.45 644.55 208 512 208 Z" 
+      fill="#FFFFFF" 
+    />
+
+    <!-- Takeaway Food Box Top Notch / Handle -->
+    <path 
+      d="M448 310 H576 C593.67 310 608 324.33 608 342 C608 359.67 593.67 374 576 374 H448 C430.33 374 416 359.67 416 342 C416 324.33 430.33 310 448 310 Z" 
+      fill="#f97316" 
+    />
+
+    <!-- 3. FORK & SPOON SILHOUETTES (Flanking the Center) -->
+    <g fill="#1e293b">
+      <!-- Minimal Fork (Left) -->
+      <path d="M370 430 V470 M386 430 V470 M402 430 V470" stroke="#1e293b" stroke-width="8" stroke-linecap="round" />
+      <path d="M362 468 C362 495 378 502 386 508 V590 C386 596 390 600 396 600 C402 600 406 596 406 590 V508 C414 502 430 495 430 468 H362 Z" />
+
+      <!-- Minimal Spoon (Right) -->
+      <path d="M638 430 C616 430 606 452 606 476 C606 498 622 506 628 508 V590 C628 596 632 600 638 600 C644 600 648 596 648 590 V508 C654 506 670 498 670 476 C670 452 660 430 638 430 Z" />
+    </g>
+
+    <!-- 4. CENTER BOLD "F" BRAND EMBLEM (Dark Charcoal) -->
+    <path 
+      d="M468 420 H556 C567.05 420 576 428.95 576 440 C576 451.05 567.05 460 556 460 H496 V500 H540 C551.05 500 560 508.95 560 520 C560 531.05 551.05 540 540 540 H496 V612 C496 623.05 487.05 632 476 632 C464.95 632 456 623.05 456 612 V432 C456 425.37 461.37 420 468 420 Z" 
+      fill="#1e293b" 
+    />
+
+    <!-- Pin Point Accent Dot -->
+    <circle cx="512" cy="728" r="26" fill="#1e293b" />
+
+  </g>
+</svg>

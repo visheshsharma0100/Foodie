@@ -130,6 +130,26 @@ export default function MenuPage() {
                 </svg>
               </button>
             )}
+            {/* Mobile View Cart Bar */}
+{isAuthenticated && cartItems.length > 0 && (
+  <div className="md:hidden mb-6">
+    <button
+      onClick={() => navigate("/cart")}
+      className="w-full bg-orange-500 hover:bg-orange-600 text-white rounded-2xl shadow-lg px-5 py-4 flex items-center justify-between"
+    >
+      <div>
+        <p className="font-bold">
+          🛒 {cartItems.reduce((sum, item) => sum + item.quantity, 0)} Items
+        </p>
+        <p className="text-sm">₹{totalPrice}</p>
+      </div>
+
+      <span className="font-bold">
+        View Cart →
+      </span>
+    </button>
+  </div>
+)}
           </div>
 
           {/* Category Filter Chips */}

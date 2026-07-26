@@ -14,6 +14,12 @@ const PaymentSuccess = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // ya "auto"
+    });
+  }, []);
   // Extract order details passed via router state or fall back to sample data
   const orderData = location.state || {
     orderId: "FH-" + Math.floor(100000 + Math.random() * 900000),

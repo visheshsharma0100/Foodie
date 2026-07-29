@@ -145,7 +145,7 @@ const PaymentSuccess = () => {
           <div className="pt-3 border-t border-slate-200/60 flex items-center justify-between">
             <span className="text-sm font-bold text-slate-800">Total Amount</span>
             <span className="text-lg font-black text-orange-600">
-              ${parseFloat(orderData.totalAmount).toFixed(2)}
+              ₹{parseFloat(orderData.totalAmount).toFixed(2)}
             </span>
           </div>
         </div>
